@@ -1,1 +1,2 @@
-# Smile-Care-Dental-Clinic-Website-
+# Smile-Care
+Smile care dental clinic
