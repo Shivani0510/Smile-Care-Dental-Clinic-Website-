@@ -27,10 +27,10 @@ app.get('/api/health', (req, res) => {
 });
 
 // Serve the frontend (static site) in the same app
-app.use(express.static(path.join(__dirname, '..', 'frontend')));
+app.use(express.static(path.join(__dirname, '..')));
 app.get('*', (req, res, next) => {
   if (req.originalUrl.startsWith('/api')) return next();
-  res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
+  res.sendFile(path.join(__dirname, '..', 'index.html'));
 });
 
 // Error handling (must be last)
