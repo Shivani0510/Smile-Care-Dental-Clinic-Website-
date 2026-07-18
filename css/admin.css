@@ -1,0 +1,122 @@
+.admin-wrap {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 12rem 2rem 5rem;
+}
+
+.admin-section h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-card {
+  max-width: 45rem;
+  margin: 5rem auto;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.admin-card form span {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.admin-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.admin-controls .box {
+  padding: 0.8rem 1.2rem;
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.admin-controls .link-btn {
+  padding: 0.9rem 2rem;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-controls .link-btn.logout {
+  background: #c0392b;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+#appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.4rem;
+}
+
+#appointments-table th,
+#appointments-table td {
+  padding: 1.2rem 1rem;
+  text-align: left;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+}
+
+#appointments-table th {
+  background: rgba(0, 0, 0, 0.03);
+  font-weight: 600;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.status-pending { background: #fff3cd; color: #856404; }
+.status-confirmed { background: #d4edda; color: #155724; }
+.status-completed { background: #d1ecf1; color: #0c5460; }
+.status-cancelled { background: #f8d7da; color: #721c24; }
+
+.row-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.row-actions select {
+  font-size: 1.3rem;
+  padding: 0.4rem;
+}
+
+.row-actions button {
+  font-size: 1.3rem;
+  padding: 0.4rem 0.9rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background: #c0392b;
+  color: #fff;
+}
+
+#empty-state {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.5);
+}
