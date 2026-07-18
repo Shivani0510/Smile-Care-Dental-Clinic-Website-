@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       showFeedback('Could not reach the server. Please check your connection and try again.', 'error');
     } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = 'book appointment';
+      submitBtn.textContent = 'Book Appointment';
     }
   });
 });

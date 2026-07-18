@@ -65,15 +65,32 @@
 }
 
 .contact-alt {
-  display: flex;
-  gap: 1rem;
+  display: flex !important;
+  gap: 1.5rem;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  max-width: 45rem;
+  margin: 2rem auto 0;
+  float: none !important;
+}
+
+.contact-alt .link-btn {
+  float: none !important;
+  width: auto;
+  flex: 1 1 18rem;
+  max-width: 20rem;
+  text-align: center;
 }
 
 @media (max-width: 450px) {
   .contact-alt {
     flex-direction: column;
+    max-width: 25rem;
+  }
+
+  .contact-alt .link-btn {
+    max-width: 100%;
+    width: 100%;
   }
 }
