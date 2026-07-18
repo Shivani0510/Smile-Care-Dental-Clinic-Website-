@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smile Care — Admin Dashboard</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/booking.css">
+<link rel="stylesheet" href="css/admin.css">
+<link rel="icon" href="images/favicon.png"/>
+</head>
+<body>
+
+<header class="header fixed-top">
+<div class="container">
+<div class="row align-items-center justify-content-between">
+<a href="index.html" class="logo">Smile Care<span>Dental Clinic.</span></a>
+<nav class="nav">
+<a href="index.html">back to site</a>
+</nav>
+</div>
+</div>
+</header>
+
+<main class="admin-wrap">
+
+<!-- login view -->
+<section id="login-view" class="admin-section">
+<div class="admin-card">
+<h2>Admin Login</h2>
+<div id="login-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+<form id="login-form">
+<span>Email :</span>
+<input type="email" id="admin-email" class="box" required>
+<span>Password :</span>
+<input type="password" id="admin-password" class="box" required>
+<button type="submit" class="link-btn">log in</button>
+</form>
+</div>
+</section>
+
+<!-- dashboard view -->
+<section id="dashboard-view" class="admin-section" hidden>
+<div class="admin-header-row">
+<h2>Appointments</h2>
+<div class="admin-controls">
+<select id="status-filter" class="box">
+<option value="">All statuses</option>
+<option value="pending">Pending</option>
+<option value="confirmed">Confirmed</option>
+<option value="completed">Completed</option>
+<option value="cancelled">Cancelled</option>
+</select>
+<button id="refresh-btn" class="link-btn">refresh</button>
+<button id="logout-btn" class="link-btn logout">log out</button>
+</div>
+</div>
+
+<div id="dashboard-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+
+<div class="table-scroll">
+<table id="appointments-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Contact</th>
+<th>Service</th>
+<th>Preferred Date</th>
+<th>Message</th>
+<th>Status</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody id="appointments-body">
+</tbody>
+</table>
+</div>
+<p id="empty-state" hidden>No appointments found.</p>
+</section>
+
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
